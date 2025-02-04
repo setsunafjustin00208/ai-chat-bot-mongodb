@@ -1,0 +1,29 @@
+// Override Bulma primary color
+$primary: #3498db;
+
+// Import Bulma with custom variables
+@import "~bulma/bulma";
+
+// Custom button styles
+.button.is-primary {
+    background-color: $primary;
+    border-color: $primary;
+    color: #fff;
+
+    &:hover {
+        background-color: darken($primary, 10%);
+        border-color: darken($primary, 10%);
+    }
+}
+
+// Custom navbar styles
+.navbar {
+    background-color: $primary;
+    .navbar-item {
+        color: #fff;
+
+        &:hover {
+            background-color: darken($primary, 10%);
+        }
+    }
+}
